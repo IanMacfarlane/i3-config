@@ -32,7 +32,7 @@ bindsym $mod+Return exec st
 bindsym $mod+Shift+q kill
 
 # start dmenu (a program launcher)
-bindsym $mod+d exec dmenu_run -b -fn 'Monospace-13'
+bindsym $mod+d exec dmenu_run -b -fn 'Courier-New:pixelsize=15'
 
 # don't wrap change focus 
 focus_wrapping no
@@ -140,7 +140,7 @@ for_window [class=".*"] border pixel 1
 exec_always --no-startup-id ~/.config/polybar/launch.sh
 
 # mouse sensitivity
-exec_always xinput --set-prop 10 'libinput Accel Speed' -.5
+exec_always xinput --set-prop 8 'libinput Accel Speed' -.8
 
 # wallpaper
 exec_always feh --bg-scale ~/Images/wallpaper.jpg
